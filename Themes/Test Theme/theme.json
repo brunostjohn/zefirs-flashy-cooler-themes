@@ -1,5 +1,46 @@
 {
     "name": "Test Theme",
     "author": "Bruno St John",
-    "description": "# This is a test theme.\n\n*It uses markdown.*\n\n`zefirIsCute();`"
+    "description": "# This is a test theme.\n\n*It uses markdown.*\n\n`zefirIsCute();`",
+    "version": "1.0.0",
+    "tested_on": ["capellix"],
+    "customisable_parameters": [
+        {
+            "type": "sensor",
+            "display_as": "Sensor no. 1",
+            "name": "sensor1"
+        }, 
+        {
+            "type": "boolean",
+            "display_as": "Should the text be red?",
+            "name": "redText",
+            "default": "true"
+        },
+        {
+            "type": "range",
+            "display_as": "Ooh range",
+            "name": "testRange",
+            "min": "1",
+            "max": "10",
+            "step": "0.5",
+            "default": "2"
+        },
+        {
+            "type": "colour",
+            "display_as": "Example colour thing",
+            "name": "backgroundColour",
+            "default": "#FFFFFF"
+        },
+        {
+            "type": "text",
+            "display_as": "This is a text box",
+            "name": "exampleText",
+            "default": "textyboi"
+        },
+        {
+            "type": "file",
+            "display_as": "Test file",
+            "name": "testFile"
+        }
+    ]
 }

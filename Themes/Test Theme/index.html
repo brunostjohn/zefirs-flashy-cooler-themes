@@ -4,10 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>
-        fpwerouwghertpugherpoigrjpoerjgnpoiervjvnpmoiregmjprivgjmperivjmrpogivrmjpogivemjpogijmrpeigvjmepimj
+    <h1 id="sensor-val">
+       a
     </h1>
+
+    <p id="config-val">
+        b
+    </p>
+
+    <script>
+        document.addEventListener("sensorUpdate", (sensors) => {
+            const h1 = document.getElementById("sensor-val");
+            h1.textContent = `Sensor 1: ${sensors.detail.sensor1.value}`;
+        });
+
+        document.addEventListener("configLoaded", (config) => {
+            const h1 = document.getElementById("config-val");
+            h1.textContent = JSON.stringify(config.detail);
+
+            const shouldRed = config.detail.redText.value === "true" ? true : false;
+
+            if(shouldRed) {
+                h1.style.color = "#FF0000";
+            } else {
+                h1.style.color = "#000000";
+            }
+        });
+    </script>
 </body>
 </html>
