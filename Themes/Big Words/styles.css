@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("/Roboto-Bold.ttf");
+}
+
+body {
+  background-color: black;
+  color: white;
+
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+
+  box-sizing: border-box;
+}
+
+#text-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+
+  opacity: 1;
+  transition: opacity 150ms ease-in-out;
+
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#text-container p {
+  font-family: "Roboto";
+  margin-right: auto;
+
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+#text-container p:first-of-type {
+  margin-top: 0;
+}
+
+#text-container p:last-of-type {
+  margin-left: auto;
+  margin-right: 0;
+}

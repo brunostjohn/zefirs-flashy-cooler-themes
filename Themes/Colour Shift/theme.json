@@ -1,0 +1,65 @@
+{
+  "name": "Colour Shift",
+  "author": "Bruno St John",
+  "description": "This theme will shift between colours based on the selected sensor's value.\nFor example, if you select your CPU, you can have the gradient change colours when it changes temperatures etc.",
+  "version": "1.0.0",
+  "tested_on": ["capellix"],
+  "customisable_parameters": [
+    {
+      "type": "sensor",
+      "display_as": "Sensor to be displayed",
+      "name": "mainSensor"
+    },
+    {
+      "type": "range",
+      "display_as": "Max value for colour 1",
+      "name": "maxColourOne",
+      "min": "0",
+      "max": "7000",
+      "step": "1",
+      "default": "20"
+    },
+    {
+      "type": "colour",
+      "display_as": "Colour 1",
+      "name": "colourOne",
+      "default": "#05a4ed"
+    },
+    {
+      "type": "range",
+      "display_as": "Max value for colour 2",
+      "name": "maxColourTwo",
+      "min": "0",
+      "max": "7000",
+      "step": "1",
+      "default": "50"
+    },
+    {
+      "type": "colour",
+      "display_as": "Colour 2",
+      "name": "colourTwo",
+      "default": "#801aed"
+    },
+    {
+      "type": "range",
+      "display_as": "Max value for colour 3",
+      "name": "maxColourThree",
+      "min": "0",
+      "max": "7000",
+      "step": "1",
+      "default": "70"
+    },
+    {
+      "type": "colour",
+      "display_as": "Colour 3",
+      "name": "colourThree",
+      "default": "#edaa1a"
+    },
+    {
+      "type": "colour",
+      "display_as": "Colour 4",
+      "name": "colourFour",
+      "default": "#ed211a"
+    }
+  ]
+}

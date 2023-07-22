@@ -1,0 +1,26 @@
+{
+    "name": "Big Words",
+    "author": "Bruno St John",
+    "description": "See your sensor values in style.",
+    "version": "1.0.0",
+    "tested_on": ["capellix"],
+    "customisable_parameters": [
+        {
+            "type": "sensor",
+            "display_as": "Sensor no. 1",
+            "name": "sensor1"
+        }, 
+        {
+            "type": "colour",
+            "display_as": "Text Colour",
+            "name": "textColour",
+            "default": "#FFFFFF"
+        },
+        {
+            "type": "colour",
+            "display_as": "Accent Colour",
+            "name": "accentColour",
+            "default": "#747bff"
+        }
+    ]
+}
